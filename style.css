@@ -96,7 +96,7 @@ button:hover{
     align-items: center;
     margin: 1rem;
 }
-.moeda{
+.real, .dollar{
     width: 100%;
     color: #777777;
     font-size: 1rem;

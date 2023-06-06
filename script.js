@@ -1,4 +1,4 @@
-const buttonConverter = document.getElementById("btn");
+const buttonConverter = document.getElementById("convertButton");
 
 function convertValues() {
     const inputTypedValue = document.getElementById("enteredValue").value //input valor
@@ -6,17 +6,23 @@ function convertValues() {
    const currencyValueConvert = document.querySelector(".currency-value") //valor convertido
     
 
-const valorDolarDia = 5.2;
-const resultadoDolar = inputTypedValue / valorDolarDia;
+const dollarValueOfTheDay = 5.2;
+const result = inputTypedValue / dollarValueOfTheDay;
 
 currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR",{
 
     style:"currency",
     currency:"BRL"
 
-}).format(inputTypedValue)
+}).format(inputTypedValue);
 
-currencyValueConvert.innerHTML = esultadoDolar;
+currencyValueConvert.innerHTML = new Intl.NumberFormat("en-US",{
+    style:"currency",
+    currency:"USD"
+}).format(result);
+
+
+
 
 
 
