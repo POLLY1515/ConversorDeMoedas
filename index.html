@@ -11,24 +11,24 @@
     <title>Currency converter</title>
 </head>
 <body>
-    <img class="img1" src="./assets/img/logo.gif" alt="logo-Dev-Club-Convert-Money">
+    <img class="logo" src="./assets/img/logo.gif" alt="logo-Dev-Club-Convert-Money">
 
 
-    <main class="container">
-        <form>
-          <div class="container-itens">
+    <main class=>
+          
               <label>
                    Converter de
                 <select>
-                    <option value="">R$ Real Brasileiro</option>
+                    <option>R$ Real Brasileiro</option>
+
                 </select>
               </label>
 
             <label>
                 Converter para
-                 <select>
-                    <option id="dollarOption">US$ Dolar Americano</option>
-                    <option id="euroOption">E Euro</option>
+                 <select class="currency-select"><!--O value é como se fosse o id-->
+                    <option value="dolar">US$ Dolar Americano</option>
+                    <option value="euro">E Euro</option>
                 </select>
              </label>
             <label>
@@ -38,28 +38,22 @@
 
             <button id="convertButton">Converter</button>
 
-        </div>
-
-            <section class="container2">
-                <div class="container-itens2" >
+            <section>
+                <div class="currency-box">
                     <img src="./assets/img/brasil 2.png" alt="Bandeira do Brasil">
-                    <p class="real">Real</p>
+                    <p class="currency">Real</p>
                     <p class="currency-value-to-convert">R$ 0.00</p>
                 </div>
-                <div class="container-itens2">
-                    <img  src="./assets/img/Vector.png" alt="Imagem de uma seta roxa">
-
-                </div>
-                <div class="container-itens2" >
-                    <img src="./assets/img/estados-unidos (1) 1.png" alt="Logo-dolar-americano">
-                    <p class="dollar">Dolar Americano</p>
+                    <img class="arrow-img" src="./assets/img/Vector.png" alt="Imagem de uma seta roxa">
+                
+                <div class="currency-box">
+                    <img  src="./assets/img/estados-unidos (1) 1.png" alt="Logo-dolar" id="currency-img">
+                    <p class="currency" id="currency-name">Dólar Americano</p>
                     <p class="currency-value">U$ 0.00</p>
                 </div>
                 
             </section>
             
-            </form>
-
     </main>
 
     <script src="./script.js"></script>

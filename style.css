@@ -10,14 +10,11 @@ html{
 }
 
 body{
-    width: 100%;
-    height: 100%;
     background: 
     #8A51FC;
 }
-.img1{
-    width: 10rem;
-    margin: 0 auto;
+.logo{
+    width: 300px;
     display: block;
     margin: 1.25rem auto;
     /*Importante:Para centralizar algo na página,aqui no caso a imagempor padrão ela vem com 
@@ -25,22 +22,24 @@ body{
     é importante trocar o display para block,para ficar centralizado*/
 
 }
-.container{
+main{
     /*O main por padrao,já é display block,por isso ao colocar o margin 0 auto,ja centraliza*/
     border-radius: 1rem;
     width: 30vw;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
     padding: 2.8rem 2rem 1.4rem;/*1-em cima 2-dos lados 3-em baixo */
 
     background:#E5E5E5;
     
 }
-.container-itens label{
+label{
+    color: #777777;
     font-weight: 700;
     font-size: 1rem;
-
 }
-.container-itens select,input{
+
+
+select,input{
     width: 100%;
     height: 3rem;
     font-weight: 700;
@@ -51,6 +50,8 @@ body{
     margin-top: 6px;
     color: #555555;
     border: 1px solid #BBBBBB;
+    cursor: pointer;
+    background: #FFFFFF;
     
 }
 
@@ -79,22 +80,24 @@ button{
 button:hover{
     opacity: 0.8;
 }
-.container2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #772FD3;
-    border-radius: 5px;
-    width: 20rem;
-    height: auto;
-    margin: 0 auto;
-    padding: 1rem;
+.arrow-img{
+    margin: 1rem 0;
 }
-.container-itens2{
+.currency-box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    gap: 4px;
+   
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.25rem;
+    padding:12px;
+    border: 1px solid #772FD3;
+    border-radius: 1.5rem;
 }
 .real, .dollar{
     width: 100%;
