@@ -99,7 +99,7 @@ section{
     border: 1px solid #772FD3;
     border-radius: 1.5rem;
 }
-.real, .dollar{
+.currency{
     width: 100%;
     color: #777777;
     font-size: 1rem;
@@ -109,4 +109,11 @@ section{
     color: #555555;
     font-weight: 700;
     font-size: 1.3rem;
+}
+@media(max-width:1000px){
+    main{
+        width: 100%;
+        background: #777777;
+    }
+    
 }
