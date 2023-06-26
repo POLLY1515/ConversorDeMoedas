@@ -8,6 +8,7 @@ function convertValues() {
   const currencyValueConvert = document.querySelector(".currency-value"); //valor convertido
   const dolarToday = 5.2;
   const euroToday = 6.2;
+  const dolarCadToday = 3.64;
 
   //Se o option for igual a dolar americano cai aqui
   if (currencySelect.value == "dolar") {
@@ -22,6 +23,13 @@ function convertValues() {
       style: "currency",
       currency: "EUR",
     }).format(inputTypedValue / euroToday);
+  }
+  //se for dolar canadense cai aqui
+  if (currencySelect.value == "dolar-cad") {
+    currencyValueConvert.innerHTML = new Intl.NumberFormat("en-CA", {
+      style: "currency",
+      currency: "CAD",
+    }).format(inputTypedValue / dolarCadToday);
   }
   //Aqui esta sendo formatado o valor digitado no campo valor e colocado dentro do campo de valor Real
   currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -42,6 +50,11 @@ function changeCurrency(){
         currencyName.innerHTML = "Dolar";
         currencyImg.src = "./assets/img/estados-unidos (1) 1.png"
 
+    }if(currencySelect.value == "dolar-cad"){
+      currencyName.innerHTML = "Dolar Canadense";
+       currencyImg.src = "./assets/img/dollarCad.jpg" 
+      //f.setAttribute(`width`,`20px`)
+      currencyImg.setAttribute(`width`,`60px`)
     }
 
     convertValues();
